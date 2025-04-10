@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+body {
+  background-color: #0a192f;
+  color: #f8f8f2;
+  margin: 0;
+  padding-bottom: 20px;
+
+.container {
+  font-family: sans-serif;
+  max-width: 900px; /* This controls the width of the content area */
+  margin: 20px auto; /* Centers the container horizontally */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center; /* Centers text within the container */
+}
+.profile-image {
+  width: 50%;
+  max-height: 800px; /* Increased max-height */
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2 , h3 {
+  color: #1c7669;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  line-height: 1.6;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+} 
+}
+.buttons {
+  margin-bottom: 20px; /* Adds space below the buttons */
 }
 
-.App-link {
-  color: #61dafb;
+.buttons button {
+  padding: 10px 15px; /* Adds padding inside the buttons */
+  margin: 0 10px; /* Adds horizontal space between buttons */
+  border: 1px solid #333; /* Adds a border around the buttons */
+  border-radius: 5px; /* Rounds the corners of the buttons */
+  background-color: rgba(14, 135, 154, 0.863); /* Sets the button background to white */
+  color: #333; /* Sets the button text color */
+  cursor: pointer; /* Changes the mouse cursor on hover */
+  font-size: 1em; /* Sets the font size of the button text */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons button:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
 }
